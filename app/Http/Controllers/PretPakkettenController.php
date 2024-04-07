@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Models\PretPakketten;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,10 @@ class PretPakkettenController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
-        //
+
+        return View('pret-pakketten.index');
     }
 
     /**
